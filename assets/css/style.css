@@ -134,10 +134,11 @@ em.serif{font-family:var(--display);font-style:italic;font-weight:500}
 .hero{position:relative;overflow:hidden;background:var(--green-deep)}
 .hero-media{position:absolute;inset:0}
 .hero-media img{width:100%;height:100%;object-fit:cover}
-.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(41,67,48,.92) 0%,rgba(41,67,48,.72) 45%,rgba(41,67,48,.25) 100%)}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(26,38,30,.94) 0%,rgba(26,38,30,.82) 48%,rgba(26,38,30,.60) 100%)}
 .hero-inner{position:relative;z-index:2;padding-block:clamp(var(--s8),12vw,160px);color:var(--cream)}
-.hero-inner h1{color:var(--cream);max-width:16ch}
-.hero-inner h1 .accent{color:var(--gold)}
+.hero-inner h1{color:var(--cream);max-width:16ch;text-shadow:0 2px 18px rgba(20,30,22,.45)}
+.hero-inner h1 .accent{color:var(--gold-soft)}
+.hero-inner .eyebrow{color:var(--gold-soft);text-shadow:0 1px 10px rgba(20,30,22,.5)}
 .hero-inner .lead{color:rgba(250,244,232,.9);margin-top:var(--s5)}
 .hero-cta{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s6)}
 .hero-badges{display:flex;flex-wrap:wrap;gap:var(--s5);margin-top:var(--s7);padding-top:var(--s5);border-top:1px solid rgba(250,244,232,.2)}
@@ -188,6 +189,19 @@ em.serif{font-family:var(--display);font-style:italic;font-weight:500}
 .heritage-hero figcaption{margin-top:var(--s3);text-align:center;font-family:var(--display);font-style:italic;color:var(--gold-deep);font-size:1rem}
 .heritage-text{max-width:760px;margin-inline:auto;text-align:center}
 .heritage-text .muted{margin-top:var(--s3)}
+/* verfijnd luifel/awning-patroon: subtiele tonale verticale strepen (markt-luifel, niet oubollig) */
+.awning-stripes{background:repeating-linear-gradient(90deg,#F4F1E6 0 44px,#ECE7D8 44px 88px);position:relative}
+.awning-stripes::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:repeating-linear-gradient(90deg,var(--green) 0 44px,var(--gold) 44px 88px);opacity:.55}
+/* koerier-kaarten: de gezichten achter de kraam */
+.koeriers-grid{display:grid;gap:var(--s5);grid-template-columns:1fr}
+@media(min-width:760px){.koeriers-grid{grid-template-columns:repeat(3,1fr)}}
+.koerier-card{background:var(--paper);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+.koerier-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.koerier-card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--cream-3)}
+.koerier-card .ph img{width:100%;height:100%;object-fit:cover;object-position:center 28%}
+.koerier-card .body{padding:var(--s5)}
+.koerier-card h4{margin:0}
+.koerier-card .regio{font-family:var(--body);font-weight:600;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px}
 
 /* ---- Sections op kleur ---- */
 .bg-green{background:var(--green);color:var(--cream)}

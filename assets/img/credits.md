@@ -48,3 +48,13 @@ Authentiek beeldmateriaal van de huidige De Kaaskoerier-site, ingezet om het AI/
 | kaasplank-flatlay.jpg | wp-content/uploads/2020/03/home_slider_2_dark.jpg (1920×1082) | Flatlay kaasplank (brie, wiggen, druiven, honing, noten) — reserve/sfeer |
 
 Let op: `GettyImages-114258454_LR@2x.png` op de site is een **kompas** (koerier-symbool), géén marktfoto — niet gebruiken als historisch beeld. De échte marktfoto zit in de hero-slider (`home_slider_3_dark.jpg`).
+
+### Echte koerier-portretten (feedbackronde 2, 23 juni 2026)
+
+Persoonlijke foto's van de koeriers, van hun eigen pagina's op dekaaskoerier.nl. Voor de "Onze koeriers"-band + Matteo-profiel. Rechten: van De Kaaskoerier zelf — vóór livegang verifiëren.
+
+| Bestand | Bron (dekaaskoerier.nl) | Inhoud |
+|---|---|---|
+| matteo-kraam.jpg | uploads/2021/01/de-noord-hollandse-kaaskoerier-header.jpg (2000×500) | Matteo (Noord-Hollandse) met collega aan de kraam, kaasmes |
+| koerier-sauer.jpg | uploads/2020/04/zuid-limburgse-kaaskoerier@2x... (597×400) | Mitchel Sauer (Zuid-Limburgse), portret aan de kraam |
+| koerier-nijmeegse.jpg | uploads/2020/05/Nijmeegse_Kaaskoerier_2.jpg (718×514) | De Nijmeegse koerier overhandigt klant een zak kaas |
