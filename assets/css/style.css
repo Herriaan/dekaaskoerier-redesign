@@ -8,21 +8,21 @@
 
 /* ---- Tokens ---- */
 :root{
-  /* kleur */
-  --cream:        #FAF4E8;
-  --cream-2:      #F2E7D2;
-  --cream-3:      #EADBBF;
+  /* kleur — huidige huisstijl De Kaaskoerier (logo): groen #25332d, goud #958225 */
+  --cream:        #F6F4ED;
+  --cream-2:      #ECE8DB;
+  --cream-3:      #DCD6C5;
   --paper:        #FFFFFF;
-  --ink:          #2B2620;
-  --ink-soft:     #6A5F4E;
-  --gold:         #E0A028;
-  --gold-deep:    #B27814;
-  --gold-soft:    #F4D89A;
-  --green:        #38583E;
-  --green-deep:   #294330;
-  --green-bright: #6E9460;
-  --terracotta:   #C0492F;
-  --line:         #E3D6BC;
+  --ink:          #232a23;
+  --ink-soft:     #5d6359;
+  --gold:         #958225;
+  --gold-deep:    #6f6019;
+  --gold-soft:    #c7b667;
+  --green:        #25332d;
+  --green-deep:   #1a241f;
+  --green-bright: #4f6b54;
+  --terracotta:   #958225;
+  --line:         #e1dccb;
 
   /* type */
   --display: "Fraunces", Georgia, serif;
@@ -89,8 +89,8 @@ em.serif{font-family:var(--display);font-style:italic;font-weight:500}
   min-height:48px;
 }
 .btn svg{width:1.1em;height:1.1em}
-.btn--primary{background:var(--gold);color:var(--ink);box-shadow:0 6px 16px rgba(224,160,40,.35)}
-.btn--primary:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(224,160,40,.45)}
+.btn--primary{background:var(--gold);color:#fff;box-shadow:0 6px 16px rgba(149,130,37,.32)}
+.btn--primary:hover{transform:translateY(-2px);background:var(--gold-deep);box-shadow:0 10px 22px rgba(149,130,37,.42)}
 .btn--ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
 .btn--ghost:hover{background:var(--ink);color:var(--cream)}
 .btn--light{background:var(--cream);color:var(--green-deep)}
@@ -115,6 +115,9 @@ em.serif{font-family:var(--display);font-style:italic;font-weight:500}
   background:var(--green);color:var(--gold-soft);font-size:1.1rem;border:2px solid var(--gold);
 }
 .brand small{display:block;font-family:var(--body);font-weight:600;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);margin-top:-2px}
+.brand-logo{height:42px;width:auto;display:block}
+@media(max-width:600px){.brand-logo{height:30px}.nav-actions .btn--primary{display:none}}
+.footer-logo img{height:96px;width:auto;margin-bottom:var(--s4)}
 .nav-links{display:none;gap:var(--s5);align-items:center}
 .nav-links a{font-weight:600;font-size:.98rem;padding:6px 2px;position:relative;color:var(--ink)}
 .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .2s}
@@ -142,12 +145,12 @@ em.serif{font-family:var(--display);font-style:italic;font-weight:500}
 .hero-badge .ic{width:34px;height:34px;border-radius:50%;background:rgba(224,160,40,.2);display:grid;place-items:center;color:var(--gold);flex:none}
 
 /* ---- Locator bar (postcode) ---- */
-.locator{background:var(--gold);color:var(--ink)}
+.locator{background:var(--green);color:var(--cream)}
 .locator-inner{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s4);padding-block:var(--s4)}
-.locator strong{font-family:var(--display);font-size:1.15rem}
+.locator strong{font-family:var(--display);font-size:1.15rem;color:var(--cream)}
 .locator-form{display:flex;gap:var(--s2);flex:1;min-width:260px;max-width:480px}
 .locator-form input{flex:1;border:none;border-radius:var(--r-pill);padding:12px 18px;font-family:inherit;font-size:1rem;min-height:48px}
-.locator-form input:focus{outline:3px solid var(--green)}
+.locator-form input:focus{outline:3px solid var(--gold)}
 
 /* ---- Cards ---- */
 .card{background:var(--paper);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
@@ -250,8 +253,28 @@ em.serif{font-family:var(--display);font-style:italic;font-weight:500}
 .stat .lbl{font-weight:600;color:var(--ink-soft);font-size:.92rem}
 
 /* ---- CTA band ---- */
-.cta-band{background:var(--gold);color:var(--ink);border-radius:var(--r-lg);padding:clamp(var(--s6),5vw,var(--s8));text-align:center}
-.cta-band h2{margin-bottom:var(--s3)}
+.cta-band{background:var(--green);color:var(--cream);border-radius:var(--r-lg);padding:clamp(var(--s6),5vw,var(--s8));text-align:center;position:relative;overflow:hidden}
+.cta-band h2{margin-bottom:var(--s3);color:var(--cream)}
+.cta-band .eyebrow{color:var(--gold-soft)}
+.cta-band .lead{color:rgba(246,244,237,.85)}
+.cta-band .btn--ghost{border-color:var(--cream);color:var(--cream)}
+.cta-band .btn--ghost:hover{background:var(--cream);color:var(--green)}
+
+/* ---- Foto-galerij ---- */
+.gallery{display:grid;gap:var(--s2);grid-template-columns:repeat(2,1fr)}
+@media(min-width:680px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.gallery{grid-template-columns:repeat(6,1fr)}}
+.gallery figure{margin:0;overflow:hidden;border-radius:var(--r-sm);aspect-ratio:1;background:var(--cream-3)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.08)}
+.gallery .wide{grid-column:span 2}
+@media(min-width:1000px){.gallery .wide{grid-column:span 2;aspect-ratio:2/1}}
+
+/* ---- Foto-achtergrond op kleurvlak ---- */
+.photo-bg{position:relative;overflow:hidden}
+.photo-bg>.photo-bg-media{position:absolute;inset:0;opacity:.16}
+.photo-bg>.photo-bg-media img{width:100%;height:100%;object-fit:cover}
+.photo-bg>.wrap{position:relative;z-index:1}
 
 /* ---- Footer ---- */
 .site-footer{background:var(--green-deep);color:rgba(250,244,232,.75)}
