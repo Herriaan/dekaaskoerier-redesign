@@ -36,3 +36,15 @@ Gedownload: 23 juni 2026.
 | recept-2.jpg | Pexels foto 30823033 — https://www.pexels.com/photo/30823033/ (rigatoni met gesmolten kaas en kruiden) | Pexels-licentie |
 | recept-3.jpg | Pexels foto 806357 — https://www.pexels.com/photo/806357/ (huisgemaakte mac and cheese in ovenschaal) | Pexels-licentie |
 | brood-kaas.jpg | Pexels foto 28575893 — https://www.pexels.com/photo/28575893/ (ambachtelijke kaas en brood op houten plank) | Pexels-licentie |
+
+## Échte sitefoto's van dekaaskoerier.nl (feedbackronde 23 juni 2026)
+
+Authentiek beeldmateriaal van de huidige De Kaaskoerier-site, ingezet om het AI/stock-gevoel te verminderen. Rechten: van De Kaaskoerier zelf — voor de mockup als ontwerpvoorstel, vóór livegang rechten/hi-res bij de klant verifiëren.
+
+| Bestand | Bron (dekaaskoerier.nl) | Inhoud |
+|---|---|---|
+| historisch-markt.jpg | wp-content/uploads/2020/03/home_slider_3_dark.jpg (1920×1082) | Historische Nederlandse kaasmarkt, mannen lossen kaaswielen van een kar — het ankerbeeld (erfgoed) |
+| koerier-kraam-echt.jpg | wp-content/uploads/2020/03/home_slider_1_dark.jpg (1920×1082) | Echte Kaaskoerier (De Gooische) snijdt kaas aan de kraam, met merkschort/verpakking |
+| kaasplank-flatlay.jpg | wp-content/uploads/2020/03/home_slider_2_dark.jpg (1920×1082) | Flatlay kaasplank (brie, wiggen, druiven, honing, noten) — reserve/sfeer |
+
+Let op: `GettyImages-114258454_LR@2x.png` op de site is een **kompas** (koerier-symbool), géén marktfoto — niet gebruiken als historisch beeld. De échte marktfoto zit in de hero-slider (`home_slider_3_dark.jpg`).

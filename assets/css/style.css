@@ -182,6 +182,12 @@ em.serif{font-family:var(--display);font-style:italic;font-weight:500}
 .split .media{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/3;background:var(--cream-3)}
 .split .media img{width:100%;height:100%;object-fit:cover}
 .split blockquote{font-family:var(--display);font-style:italic;font-size:1.35rem;line-height:1.4;color:var(--green-deep);border-left:4px solid var(--gold);padding-left:var(--s4);margin-block:var(--s4)}
+/* historische erfgoed-foto: groot, volle breedte als ankerbeeld */
+.heritage-hero{margin:0 0 var(--s5)}
+.heritage-hero img{width:100%;display:block;border-radius:var(--r-lg);box-shadow:var(--shadow-lg);aspect-ratio:16/9;object-fit:cover;object-position:center 38%}
+.heritage-hero figcaption{margin-top:var(--s3);text-align:center;font-family:var(--display);font-style:italic;color:var(--gold-deep);font-size:1rem}
+.heritage-text{max-width:760px;margin-inline:auto;text-align:center}
+.heritage-text .muted{margin-top:var(--s3)}
 
 /* ---- Sections op kleur ---- */
 .bg-green{background:var(--green);color:var(--cream)}
@@ -198,9 +204,9 @@ em.serif{font-family:var(--display);font-style:italic;font-weight:500}
 .market-list{display:flex;flex-direction:column;gap:var(--s3)}
 .market-row{display:grid;grid-template-columns:auto 1fr auto;gap:var(--s4);align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:var(--s4) var(--s5);transition:.15s}
 .market-row:hover{border-color:var(--gold);box-shadow:var(--shadow)}
-.day-badge{display:flex;flex-direction:column;align-items:center;justify-content:center;width:62px;height:62px;border-radius:var(--r);background:var(--green);color:var(--cream);flex:none}
-.day-badge .d{font-family:var(--display);font-size:1.05rem;font-weight:700;text-transform:capitalize}
-.day-badge .t{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;opacity:.85}
+.day-badge{display:flex;flex-direction:column;align-items:center;justify-content:center;width:62px;height:62px;border-radius:var(--r);background:var(--green);color:var(--cream);flex:none;padding:4px;overflow:hidden;text-align:center}
+.day-badge .d{font-family:var(--display);font-size:1.1rem;font-weight:700;text-transform:capitalize;line-height:1}
+.day-badge .t{font-size:.52rem;text-transform:lowercase;letter-spacing:.01em;opacity:.85;line-height:1.15;max-width:100%;white-space:nowrap;margin-top:2px}
 .market-row .place{font-family:var(--display);font-size:1.2rem;font-weight:600}
 .market-row .meta{color:var(--ink-soft);font-size:.92rem;display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:2px}
 .market-row .meta span{display:inline-flex;align-items:center;gap:5px}
